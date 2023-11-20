@@ -7,10 +7,11 @@ if (taskInput != "") {
     const newTask = document.createElement("div");
     newTask.className = "row";
     newTask.innerHTML = `
-        <li class="border-1 border-black border d-flex"">
+        <li class="d-flex"">
             <button class="btn btn-primary chButton">✓</button>
             <button class="btn btn-danger exButton">✕</button>
             <p class="col fw-bold mx-3"  style="top: 15px; position:relative;">${taskInput}</p>
+            
         </li>`;
 
     taskList.appendChild(newTask);
